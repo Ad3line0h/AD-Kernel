@@ -1,6 +1,7 @@
+#include "vga.h"
+
 void kernel_main() {
-    char* video_memory = (char*) 0xB8000;
-    video_memory[0] = 'K';
-    video_memory[1] = 0x0F;
+    vga_print("Hello, AD-Kernel!", 0x0F, 0, 0);
     while (1) {}    // 여기서 멈춤
 }
+

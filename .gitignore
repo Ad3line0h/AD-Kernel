@@ -1,0 +1,8 @@
+*.o
+*.bin
+*.flat
+*.img
+*obj
+*.pdb
+.claude/
+.vscode/
